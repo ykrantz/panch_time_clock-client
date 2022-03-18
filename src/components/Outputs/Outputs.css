@@ -1,0 +1,31 @@
+#Outputs-div {
+  position: relative;
+  left: 50px;
+  top: 50px;
+  border: darkblue solid;
+  min-height: 300px;
+  display: flex;
+  width: 1000px;
+  min-height: 400px;
+}
+
+.Outputs-label {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: xx-large;
+  margin-left: 50px;
+}
+
+.Outputs-message {
+  margin-left: 10px;
+}
+
+#Outputs-divShift {
+  border: darkblue solid 1px;
+  min-height: 400px;
+  width: 60%;
+}
+#Outputs-divMessage {
+  width: 40%;
+  border: darkblue solid 1px;
+}

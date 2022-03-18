@@ -1,0 +1,10 @@
+#Inputs-div-inputs {
+  /* background-color: blueviolet; */
+  align-self: center;
+  margin-left: 20px;
+}
+
+#Inputs-label {
+  margin-right: 20px;
+  font-weight: bold;
+}
