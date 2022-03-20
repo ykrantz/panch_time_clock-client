@@ -44,8 +44,8 @@ Body {
   /* background-image: url("./images/pocket-watch-3156771.jpg"); */
   /* background-image: url("./images/pexels-riccardo-bertolo-4245826.jpg"); */
   background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
     ),
     url("./images/pocket-watch-3156771.jpg");
 

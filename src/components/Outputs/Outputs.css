@@ -3,10 +3,13 @@
   left: 50px;
   top: 50px;
   border: darkblue solid;
-  min-height: 300px;
+  height: 350px;
+  /* min-height: 350px; */
+  /* max-height: 300px; */
   display: flex;
   width: 1000px;
-  min-height: 400px;
+
+  border-radius: 10px;
 }
 
 .Outputs-label {
@@ -22,8 +25,13 @@
 
 #Outputs-divShift {
   border: darkblue solid 1px;
-  min-height: 400px;
+  /* min-height: 100px; */
   width: 60%;
+
+  overflow: hidden;
+  overflow-y: scroll;
+
+  /* max-height: 500px; */
 }
 #Outputs-divMessage {
   width: 40%;

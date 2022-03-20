@@ -1,5 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
+import BASE_URL from "../../general/generalVars";
 
 // ***********
 // requeste to server:
@@ -11,9 +12,7 @@ export async function report_enternce(
   const id = get_id_from_input(setMessageFromServer, setResultsFromServer);
   if (id) {
     const time = new Date().getTime();
-    const res = await fetch(
-      `http://localhost:5004/panchtime/${id}/enter/${time}`
-    );
+    const res = await fetch(`${BASE_URL}/panchtime/${id}/enter/${time}`);
     const data = await res.text();
 
     const data_parse = JSON.parse(data);
@@ -26,9 +25,7 @@ export async function report_exit(setMessageFromServer, setResultsFromServer) {
   const id = get_id_from_input(setMessageFromServer, setResultsFromServer);
   if (id) {
     const time = new Date().getTime();
-    const res = await fetch(
-      `http://localhost:5004/panchtime/${id}/exit/${time}`
-    );
+    const res = await fetch(`${BASE_URL}/panchtime/${id}/exit/${time}`);
     const data = await res.text();
     const data_parse = JSON.parse(data);
     setMessageFromServer(data_parse);
@@ -41,7 +38,7 @@ export async function clac_total_hours_for_worker(
 ) {
   const id = get_id_from_input(setMessageFromServer, setResultsFromServer);
   if (id) {
-    const res = await fetch(`http://localhost:5004/calctotalhourshifts/${id}`);
+    const res = await fetch(`${BASE_URL}/calctotalhourshifts/${id}`);
     const data = await res.text();
     const data_parse = JSON.parse(data);
     setMessageFromServer(data_parse);
@@ -53,7 +50,7 @@ export async function get_shift_list_for_worker(
 ) {
   const id = get_id_from_input(setMessageFromServer, setResultsFromServer);
   if (id) {
-    const res = await fetch(`http://localhost:5004/wholehourshifts/${id}`);
+    const res = await fetch(`${BASE_URL}/wholehourshifts/${id}`);
     const data = await res.text();
     const data_parse = JSON.parse(data);
 

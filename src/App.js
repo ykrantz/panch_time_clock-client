@@ -20,23 +20,27 @@ function App() {
       id: "report_enternce",
       logo_name: "enter",
       func: () => report_enternce(setMessageFromServer, setResultsFromServer),
+      color: "aqua",
     },
     {
       id: "report_exit",
       logo_name: "exit",
       func: () => report_exit(setMessageFromServer, setResultsFromServer),
+      color: "cornflowerblue",
     },
     {
       id: "clac_total_hours_for_worker",
       logo_name: "clac total hours for worker",
       func: () =>
         clac_total_hours_for_worker(setMessageFromServer, setResultsFromServer),
+      color: "chartreuse",
     },
     {
       id: "get_shift_list_for_worker",
       logo_name: "get shift list for worker",
       func: () =>
         get_shift_list_for_worker(setMessageFromServer, setResultsFromServer),
+      color: "darkgoldenrod",
     },
   ];
 

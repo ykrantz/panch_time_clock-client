@@ -13,6 +13,7 @@ export default function Api_options({
         id={api_detail.id}
         logo_name={api_detail.logo_name}
         func={api_detail.func}
+        color={api_detail.color}
       />
     );
   });

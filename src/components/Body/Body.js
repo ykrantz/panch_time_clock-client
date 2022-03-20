@@ -12,7 +12,7 @@ export default function Body({
 }) {
   return (
     <div className="Body-div_body">
-      <h2>Please choose a action</h2>
+      <h2>Please choose an action:</h2>
       <div id="Body-inputts-api">
         <Api_options api_options_details={api_options_details} />
         <Inputs />
